@@ -6,6 +6,7 @@ class BookRow extends Component {
     const book = this.props.book;
     const authors = book.authors.map(author => (
       <div key={author.id}>
+        {console.log(author.id)}
         <Link to={`/authors/${author.id}`}>{author.name}</Link>
       </div>
     ));
